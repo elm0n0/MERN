@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
-const CounterApp = ({value}) => {
+const CounterApp = ({value=10}) => {
 
     //Hoocks
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(value);
 
     const handleAdd = () => {
         //setCounter(counter + 1);
@@ -12,7 +12,7 @@ const CounterApp = ({value}) => {
     }
     const handleReset = () => {
         //setCounter(counter + 1);
-        setCounter((c) => 0);
+        setCounter((c) => (value) );
     }
     const handleSubtract = () => {
         //setCounter(counter + 1);

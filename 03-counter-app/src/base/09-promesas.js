@@ -1,18 +1,6 @@
-import {getHeroeById} from './bases/08-impoerts';
+import {getHeroeById} from '../base/08-impoerts';
 // promesas
-
-// const promesa = new Promise( (resolve,reject) => {
-//     setTimeout(() => {
-//         //tarea importacion
-//         const heroe = getHeroeById(1);
-//         reject('no se pudo encontrar el Heroe');
-//     }, 2000);
-// });
-
-// promesa.then( (heroe) => {
-//     console.log(heroe);
-// }).catch(e => console.warn(e))
-const getHeroeByIdAsinc = (id) => {
+export const getHeroeByIdAsinc = (id) => {
     return new Promise( (resolve,reject) => {
         setTimeout(() => {
             //tarea importacion
@@ -22,11 +10,6 @@ const getHeroeByIdAsinc = (id) => {
             }else {
                 reject('no hay heroe')
             }
-        }, 200);
+        }, 100);
     });
 }
-getHeroeByIdAsinc(2).then(
-    console.log
-).catch(
-    console.warn
-)

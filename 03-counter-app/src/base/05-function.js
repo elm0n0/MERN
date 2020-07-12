@@ -10,28 +10,16 @@ const saludar2 = (nombre) => {
 
 const saludar3 = (nombre) => `Hola ${nombre}`;
 
-const getUser = () => (
+export const getUser = () => (
     {
         uid:'ASDASD',
         username:'PAPI'
     }
 )
 
-const user = getUser();
-console.log(user)
-
-const getUsuarioActivo = (nombre) => (
+export const getUsuarioActivo = (nombre) => (
     {
         uid:'ABC567',
         username: nombre
     }
 );
-const usuarioActivo = getUsuarioActivo('JPEREZ');
-console.log(usuarioActivo)
-console.log(saludar('goku'));
-console.log(saludar2('goku'));
-console.log(saludar3('goku'));
-console.log(getUser());
-
-
-
