@@ -1,22 +1,26 @@
 import React, {useState} from 'react'
 
 import { AddCategory } from "./AddCategory";
+import { GifGrid } from './GifGrid';
 
 const GitExpertApp = () => {
 
-    const [categories, setCategories] = useState(["A","B","C"])
-
-    // const handleApp = () => {
-    //     setCategories(cats => [...cats,'D'])
-    // }
+    const [categories, setCategories] = useState(["A"])
 
     return (
     <>
         <h2>GitExpertApp</h2>
-        <AddCategory />
+        <AddCategory setCategories={setCategories}/>
         <hr/>
         <ol>
-            {categories.map( (category,i) => (<li key={category}> {category}</li>))}
+            {
+            categories.map( category => (
+                <GifGrid 
+                    key={category}
+                    category={category} 
+                />
+            )
+        )}
         </ol>
     </>
     )
