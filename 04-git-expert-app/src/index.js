@@ -9,5 +9,3 @@ ReactDOM.render(
    <GitExpertApp />,
   document.getElementById('root')
 );
-
-// GitExpertApp

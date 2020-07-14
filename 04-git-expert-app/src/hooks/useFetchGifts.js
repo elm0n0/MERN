@@ -19,5 +19,3 @@ export const useFetchGifts = ( category ) => {
 
     return state;
 }
-
-

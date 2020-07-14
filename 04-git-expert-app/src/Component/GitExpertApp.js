@@ -5,7 +5,7 @@ import { GifGrid } from './GifGrid';
 
 const GitExpertApp = () => {
 
-    const [categories, setCategories] = useState(["A"])
+    const [categories, setCategories] = useState([])
 
     return (
     <>
